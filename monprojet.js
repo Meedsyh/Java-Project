@@ -121,11 +121,10 @@ public class Service {
         this.login = login;
         this.motDePasse = motDePasse;
     }
-}
     public boolean authentifier(String loginSaisi, String motDePasseSaisi) {
         return login.equals(loginSaisi) && motDePasse.equals(motDePasseSaisi);
 	}
-	
+}	
 
     //Class Commandander Service
 	public class CommanderService extends Client,Service {
