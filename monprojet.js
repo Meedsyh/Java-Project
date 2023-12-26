@@ -9,7 +9,7 @@ public class Client {
     private String adresse;
     private String email;
 
-    public Client(int idClient, String nom, String prenom, String tel, String adresse, String email) {
+    public Client(int idClient, String nom, String prenom, int tel, String adresse, String email) {
         this.idClient = idClient;
         this.nom = nom;
         this.prenom = prenom;
@@ -39,11 +39,11 @@ public class Contact {
     private int idContact;
     private String nom;
     private String prenom;
-    private String tel;
+    private int tel;
     private String message;
     private String sujet;
 
-    public Contact(int idContact, String nom, String prenom, String tel, String message, String sujet) {
+    public Contact(int idContact, String nom, String prenom, int tel, String message, String sujet) {
         this.idContact = idContact;
         this.nom = nom;
         this.prenom = prenom;
@@ -133,7 +133,7 @@ public class Service {
 
     public CommandeService(int idCmd, int idClient, int idservice, double totalPrix) {
         super(idClient);
-		super(idservice);
+	super(idservice);
         this.idCmd = idCmd;
         this.service = service;
         this.totalPrix = totalPrix;
